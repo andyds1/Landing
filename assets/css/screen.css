@@ -29,10 +29,19 @@ h1 {
     font-family: var(--headingFont);
 }
 
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
 h3 {
     margin-top: 1.5rem;
     font-size: 1.25rem;
     font-family: var(--headingFont);
+}
+
+p {
+    line-height: 140%;
 }
 
 a {
@@ -115,7 +124,3 @@ nav.main-nav li a {
 }
 
 /* --- Main Content --- */
-
-section.main-content {
-    
-}
