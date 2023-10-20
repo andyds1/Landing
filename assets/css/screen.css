@@ -61,6 +61,17 @@ a.active {
     background-color: var(--secondaryColor);
 }
 
+.fa {
+    border: none;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.fa:hover {
+    background: none;
+    color: var(--secondaryColor);
+}
+
 span.accent {
     color: var(--secondaryColor);
 }
@@ -144,11 +155,17 @@ form {
     flex-flow: column wrap;
 }
 
+nav.social-nav {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
 /*------------------------*/
 /* PAGE SPECIFIC ELEMENTS */
 /*------------------------*/
 
-/* --- Main Header --- */
+/* --- Main nav --- */
 
 nav.main-nav li {
     margin-top: 1.25rem;
