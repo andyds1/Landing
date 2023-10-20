@@ -133,7 +133,7 @@ main header {
 
 }
 
-main section {
+div.main-content {
     width: 50%;
     flex-shrink: 2;
     flex-grow: 1;
