@@ -16,16 +16,15 @@ body {
 
     background-color: var(--backgroundColor);
     font-family: var(--defaultFont);
-    font-weight: 400;
     font-size: 1rem;
     color: var(--primaryColor);
 
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: var(--headingFont);
 }
@@ -33,15 +32,22 @@ h1 {
 h3 {
     margin-top: 1.5rem;
     font-size: 1.25rem;
+    font-family: var(--headingFont);
 }
 
 a {
     color: var(--linkColor);
     text-decoration: none;
     border-bottom: var(--secondaryColor) .1rem solid;
+    padding: .2rem;
 }
 
 a:hover {
+    color: var(--backgroundColor);
+    background-color: var(--secondaryColor);
+}
+
+a.active {
     color: var(--backgroundColor);
     background-color: var(--secondaryColor);
 }
@@ -64,21 +70,22 @@ main {
 }
 
 main header {
-    margin-right: 4rem;
-    height: 80vh;
-    width: fit-content;
-    flex-shrink: 0;
+    margin-right: 1rem;
+    padding-right: 3rem;
+    border-right: var(--detailColor) .1rem solid;
 
+    flex-shrink: 1;
+    flex-grow: 0;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+
 }
 
 main section {
-    width: 60%;
-    height: 80vh;
-    flex-shrink: 0;
-    flex-grow: 2;
+    width: 50%;
+    flex-shrink: 2;
+    flex-grow: 1;
 }
 
 nav.main-nav {
@@ -92,12 +99,10 @@ footer {
 /* PAGE SPECIFIC ELEMENTS */
 /*------------------------*/
 
-
-
 /* --- Main Header --- */
 
 nav.main-nav li {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
 }
 
 nav.main-nav span {
@@ -107,4 +112,10 @@ nav.main-nav span {
 
 nav.main-nav li a {
     font-weight: 700;
+}
+
+/* --- Main Content --- */
+
+section.main-content {
+    
 }
