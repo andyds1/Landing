@@ -1,23 +1,19 @@
-
-/*---------------------*/
 /*    HTML ELEMENTS    */
-/*---------------------*/
 
 body {
 
-    --backgroundColor: #0D1926;
-    --primaryColor: #e6e6e6;
-    --secondaryColor: #83FF08;
-    --detailColor: #FF0883;
+    --background-color: #0D1926;
+    --primary-color: #e6e6e6;
+    --secondary-color: #83FF08;
+    --detail-color: #FF0883;
 
-    --headingFont: 'Ubuntu Mono', monospace;;
-    --defaultFont: 'Roboto Mono', monospace;
-    
+    --heading-font: 'Ubuntu Mono', monospace;
+    --default-font: 'Roboto Mono', monospace;
 
-    background-color: var(--backgroundColor);
-    font-family: var(--defaultFont);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
     font-size: 1rem;
-    color: var(--primaryColor);
+    color: var(--primary-color);
 
     width: 80%;
     margin: 0 auto;
@@ -26,7 +22,7 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: 700;
-    font-family: var(--headingFont);
+    font-family: var(--heading-font);
 }
 
 h2 {
@@ -37,7 +33,7 @@ h2 {
 h3 {
     margin-top: 1.5rem;
     font-size: 1.25rem;
-    font-family: var(--headingFont);
+    font-family: var(--heading-font);
 }
 
 p {
@@ -47,18 +43,18 @@ p {
 a {
     color: var(--linkColor);
     text-decoration: none;
-    border-bottom: var(--secondaryColor) .1rem solid;
+    border-bottom: var(--secondary-color) .1rem solid;
     padding: .2rem;
 }
 
 a:hover {
-    color: var(--backgroundColor);
-    background-color: var(--secondaryColor);
+    color: var(--background-color);
+    background-color: var(--secondary-color);
 }
 
 a.active {
-    color: var(--backgroundColor);
-    background-color: var(--secondaryColor);
+    color: var(--background-color);
+    background-color: var(--secondary-color);
 }
 
 .fa {
@@ -69,11 +65,11 @@ a.active {
 
 .fa:hover {
     background: none;
-    color: var(--secondaryColor);
+    color: var(--secondary-color);
 }
 
 span.accent {
-    color: var(--secondaryColor);
+    color: var(--secondary-color);
 }
 
 label {
@@ -82,7 +78,8 @@ label {
     margin-top: 1rem;
 }
 
-input, textarea {
+input,
+textarea {
     margin-top: .5rem;
     border-radius: 1rem;
     height: 2rem;
@@ -90,12 +87,13 @@ input, textarea {
     padding-right: 1rem;
     margin-left: .5rem;
     font-size: 1.025rem;
-    background-color: var(--backgroundColor);
-    border: var(--secondaryColor) .15rem solid;
-    color: var(--primaryColor);
+    background-color: var(--background-color);
+    border: var(--secondary-color) .15rem solid;
+    color: var(--primary-color);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
 }
 
@@ -109,13 +107,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: var(--secondaryColor);
-    color: var(--backgroundColor);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
 }
 
-/*---------------------*/
 /* CONTAINING ELEMENTS */
-/*---------------------*/
 
 main {
     margin-top: 5rem;
@@ -130,7 +126,7 @@ main {
 main header {
     margin-right: 1rem;
     padding-right: 3rem;
-    border-right: var(--detailColor) .1rem solid;
+    border-right: var(--detail-color) .1rem solid;
 
     flex-shrink: 1;
     flex-grow: 0;
@@ -161,9 +157,7 @@ nav.social-nav {
     margin-top: 1rem;
 }
 
-/*------------------------*/
 /* PAGE SPECIFIC ELEMENTS */
-/*------------------------*/
 
 /* --- Main nav --- */
 
@@ -179,9 +173,3 @@ nav.main-nav span {
 nav.main-nav li a {
     font-weight: 700;
 }
-
-/* --- Main Content --- */
-
-
-
-/* --- Contact Form --- */
