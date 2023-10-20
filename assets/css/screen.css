@@ -1,16 +1,69 @@
+
 /*---------------------*/
 /*    HTML ELEMENTS    */
 /*---------------------*/
+
+body {
+
+    --backgroundColor: #0D1926;
+    --headingColor: #83FF08;
+    --accentColor: #FF0883;
+    --textColor: #B4E1FD;
+    --linkColor: #FF8308;
+    
+
+    background-color: var(--backgroundColor);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: var(--textColor);
+
+    width: 70%;
+    margin: 0 auto;
+}
 
 
 /*---------------------*/
 /* CONTAINING ELEMENTS */
 /*---------------------*/
 
+main {
+    margin-top: 5rem;
+    padding: 1rem;
 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+main header {
+    margin-right: 4rem;
+    height: 80vh;
+    width: fit-content;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+main section {
+    width: 60%;
+    height: 80vh;
+    flex-shrink: 0;
+    flex-grow: 2;
+}
+
+footer {
+    margin-top: auto;
+}
 /*------------------------*/
 /* PAGE SPECIFIC ELEMENTS */
 /*------------------------*/
+
+nav.main-nav {
+    margin-top: 5rem;
+}
 
 
 /* --- Home --- */
