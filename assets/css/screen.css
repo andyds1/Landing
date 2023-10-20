@@ -6,22 +6,49 @@
 body {
 
     --backgroundColor: #0D1926;
-    --headingColor: #83FF08;
-    --accentColor: #FF0883;
-    --textColor: #B4E1FD;
-    --linkColor: #FF8308;
+    --primaryColor: #e6e6e6;
+    --secondaryColor: #83FF08;
+    --detailColor: #FF0883;
+
+    --headingFont: 'Ubuntu Mono', monospace;;
+    --defaultFont: 'Roboto Mono', monospace;
     
 
     background-color: var(--backgroundColor);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--defaultFont);
     font-weight: 400;
-    color: var(--textColor);
+    font-size: 1rem;
+    color: var(--primaryColor);
 
     width: 70%;
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: var(--headingFont);
+}
 
+h3 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+a {
+    color: var(--linkColor);
+    text-decoration: none;
+    border-bottom: var(--secondaryColor) .1rem solid;
+}
+
+a:hover {
+    color: var(--backgroundColor);
+    background-color: var(--secondaryColor);
+}
+
+span.accent {
+    color: var(--secondaryColor);
+}
 /*---------------------*/
 /* CONTAINING ELEMENTS */
 /*---------------------*/
@@ -54,6 +81,10 @@ main section {
     flex-grow: 2;
 }
 
+nav.main-nav {
+    margin-top: 5rem;
+}
+
 footer {
     margin-top: auto;
 }
@@ -61,9 +92,19 @@ footer {
 /* PAGE SPECIFIC ELEMENTS */
 /*------------------------*/
 
-nav.main-nav {
-    margin-top: 5rem;
+
+
+/* --- Main Header --- */
+
+nav.main-nav li {
+    margin-top: 1rem;
 }
 
+nav.main-nav span {
+    font-size: .8rem;
+    font-weight: 700;
+}
 
-/* --- Home --- */
+nav.main-nav li a {
+    font-weight: 700;
+}
