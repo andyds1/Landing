@@ -64,6 +64,44 @@ a.active {
 span.accent {
     color: var(--secondaryColor);
 }
+
+label {
+    font-size: 1.15rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    margin-top: .5rem;
+    border-radius: 1rem;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: .5rem;
+    font-size: 1.025rem;
+    background-color: var(--backgroundColor);
+    border: var(--secondaryColor) .15rem solid;
+    color: var(--primaryColor);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    height: 5rem;
+}
+
+input[type=submit] {
+    width: fit-content;
+    align-self: flex-end;
+}
+
+input[type=submit]:hover {
+    background-color: var(--secondaryColor);
+    color: var(--backgroundColor);
+}
+
 /*---------------------*/
 /* CONTAINING ELEMENTS */
 /*---------------------*/
@@ -101,9 +139,11 @@ nav.main-nav {
     margin-top: 5rem;
 }
 
-footer {
-    margin-top: auto;
+form {
+    display: flex;
+    flex-flow: column wrap;
 }
+
 /*------------------------*/
 /* PAGE SPECIFIC ELEMENTS */
 /*------------------------*/
@@ -124,3 +164,7 @@ nav.main-nav li a {
 }
 
 /* --- Main Content --- */
+
+
+
+/* --- Contact Form --- */
