@@ -1,10 +1,9 @@
 import * as templates from './templates.js'
 import { projects } from './projects.js'
 
-init();
+init()
 
-function init() {
-  
+function init () {
   const currentPage = getCurrentPage()
   templates.initHeader(currentPage)
 
