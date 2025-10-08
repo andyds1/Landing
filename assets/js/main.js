@@ -1,4 +1,19 @@
-// Burger menu toggle
+import * as templates from './templates.js'
+import { projects } from './projects.js'
+
+init()
+
+function init () {
+  const currentPage = getCurrentPage()
+  templates.initHeader(currentPage)
+
+  if (window.location.pathname.includes('projects.html')) {
+    loadProjects()
+  } else if (window.location.pathname.includes('project-detail.html')) {
+    loadProjectDetail()
+  }
+}
+
 function initBurgerMenu () {
   const burgerMenu = document.querySelector('.burger-menu')
   const mainNav = document.querySelector('nav.main-nav')
@@ -89,18 +104,18 @@ function loadProjectDetail () {
   ).join('')
 
   // Update overview
-  const overviewSection = document.querySelector('.project-section:nth-of-type(1) p')
-  overviewSection.textContent = project.description
+  const overviewSection = document.querySelector('.overviewSection p')
+  overviewSection.innerHTML = project.description
 
   // Update features
-  const featuresSection = document.querySelector('.project-section:nth-of-type(2) p')
+  const featuresSection = document.querySelector('.featureSection p')
   featuresSection.innerHTML = project.features.map(feature =>
         `• ${feature}`
   ).join('<br>')
 
   // Update technologies
-  const techSection = document.querySelector('.project-section:nth-of-type(3) p')
-  techSection.textContent = project.technologies
+  const techSection = document.querySelector('.techSection p')
+  techSection.innerHTML = project.technologies
 
   // Update links
   const demoLink = document.querySelector('.project-button:not(.secondary)')
@@ -137,16 +152,4 @@ function getCurrentPage () {
   }
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function () {
-  // Initialize header with current page
-  const currentPage = getCurrentPage()
-  initHeader(currentPage)
-
-  // Check which page we're on and load appropriate content
-  if (window.location.pathname.includes('projects.html')) {
-    loadProjects()
-  } else if (window.location.pathname.includes('project-detail.html')) {
-    loadProjectDetail()
-  }
-})
+export { initBurgerMenu }

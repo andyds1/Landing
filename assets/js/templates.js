@@ -1,4 +1,5 @@
-// Header template
+import { initBurgerMenu } from './main.js'
+
 function createHeader (activePage) {
   return `
         <h1><span class="accent">#</span> <a href="/index.html">Andy De Schuytener</a></h1>
@@ -66,3 +67,5 @@ function initFooter () {
     footer.innerHTML = createFooter()
   }
 }
+
+export { initHeader, initFooter }

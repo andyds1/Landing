@@ -6,7 +6,7 @@ const projects = [
     description: 'A full-stack e-commerce platform with shopping cart, payment integration, and admin dashboard.',
     shortDescription: 'Full-stack e-commerce platform with cart and payment integration.',
     tags: ['JavaScript', 'React', 'Node.js', 'MongoDB'],
-    image: '../assets/images/project1.png', // Add your image path
+    image: '', // Add your image path
     demoLink: 'https://demo-link.com',
     githubLink: 'https://github.com/andyds1/project1',
     features: [
@@ -24,7 +24,7 @@ const projects = [
     description: 'A weather application that displays current weather and 7-day forecasts using external APIs.',
     shortDescription: 'Weather app with current conditions and 7-day forecasts.',
     tags: ['Python', 'Flask', 'API', 'CSS'],
-    image: '../assets/images/project2.png',
+    image: '',
     demoLink: 'https://demo-link.com',
     githubLink: 'https://github.com/andyds1/project2',
     features: [
@@ -42,7 +42,7 @@ const projects = [
     description: 'A responsive portfolio website showcasing projects, skills, and contact information.',
     shortDescription: 'Personal portfolio with project showcase and contact form.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    image: '../assets/images/project3.png',
+    image: '',
     demoLink: 'https://demo-link.com',
     githubLink: 'https://github.com/andyds1/project3',
     features: [
@@ -60,7 +60,7 @@ const projects = [
     description: 'A collaborative task management application with real-time updates and team features.',
     shortDescription: 'Collaborative task manager with real-time sync.',
     tags: ['Node.js', 'Express', 'Socket.io', 'PostgreSQL'],
-    image: '../assets/images/project4.png',
+    image: '',
     demoLink: 'https://demo-link.com',
     githubLink: 'https://github.com/andyds1/project4',
     features: [
@@ -78,7 +78,7 @@ const projects = [
     description: 'A modern blogging platform with markdown support, categories, and user comments.',
     shortDescription: 'Blogging platform with markdown and commenting system.',
     tags: ['Vue.js', 'TypeScript', 'Firebase'],
-    image: '../assets/images/project5.png',
+    image: '',
     demoLink: 'https://demo-link.com',
     githubLink: 'https://github.com/andyds1/project5',
     features: [
@@ -96,7 +96,7 @@ const projects = [
     description: 'An inventory management system for small businesses with stock tracking and reporting.',
     shortDescription: 'Business inventory system with stock tracking.',
     tags: ['C#', '.NET', 'SQL Server'],
-    image: '../assets/images/project6.png',
+    image: '',
     demoLink: 'https://demo-link.com',
     githubLink: 'https://github.com/andyds1/project6',
     features: [
@@ -109,3 +109,5 @@ const projects = [
     technologies: 'Developed using C# and .NET Core with Entity Framework. SQL Server for database management. Implemented RESTful API and responsive admin interface.'
   }
 ]
+
+export { projects }
