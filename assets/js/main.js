@@ -1,9 +1,10 @@
 import * as templates from './templates.js'
 import { projects } from './projects.js'
 
-init()
+init();
 
-function init () {
+function init() {
+  
   const currentPage = getCurrentPage()
   templates.initHeader(currentPage)
 
@@ -103,19 +104,21 @@ function loadProjectDetail () {
         `<span class="project-tag">${tag}</span>`
   ).join('')
 
+  const projectSections = document.querySelectorAll('.project-section')
+
   // Update overview
-  const overviewSection = document.querySelector('.overviewSection p')
+  const overviewSection = projectSections[0].querySelector('p')
   overviewSection.innerHTML = project.description
 
   // Update features
-  const featuresSection = document.querySelector('.featureSection p')
+  const featuresSection = projectSections[1].querySelector('p')
   featuresSection.innerHTML = project.features.map(feature =>
         `• ${feature}`
   ).join('<br>')
 
   // Update technologies
-  const techSection = document.querySelector('.techSection p')
-  techSection.innerHTML = project.technologies
+  const techSection = projectSections[2].querySelector('p')
+  techSection.textContent = project.technologies
 
   // Update links
   const demoLink = document.querySelector('.project-button:not(.secondary)')
