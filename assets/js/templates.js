@@ -1,6 +1,6 @@
 // Header template
-function createHeader(activePage) {
-    return `
+function createHeader (activePage) {
+  return `
         <h1><span class="accent">#</span> <a href="/index.html">Andy De Schuytener</a></h1>
             <h3><span class="accent">##</span> Student @ <a
                     href="https://www.howest.be/en/programmes/bachelor/applied-computer-science" target="_blank">Howest
@@ -42,27 +42,27 @@ function createHeader(activePage) {
                 </li>
             </ul>
         </nav>
-    `;
+    `
 }
 
 // Initialize header
-function initHeader(activePage) {
-    const header = document.querySelector('main header');
-    if (header) {
-        header.innerHTML = createHeader(activePage);
-        initBurgerMenu();
-    }
+function initHeader (activePage) {
+  const header = document.querySelector('main header')
+  if (header) {
+    header.innerHTML = createHeader(activePage)
+    initBurgerMenu()
+  }
 }
 
-function createFooter() {
-    return `
+function createFooter () {
+  return `
         <p>&copy; ${new Date().getFullYear()} Andy De Schuytener. All rights reserved.</p>
-    `;
+    `
 }
 
-function initFooter() {
-    const footer = document.querySelector('footer');
-    if (footer) {
-        footer.innerHTML = createFooter();
-    }
+function initFooter () {
+  const footer = document.querySelector('footer')
+  if (footer) {
+    footer.innerHTML = createFooter()
+  }
 }

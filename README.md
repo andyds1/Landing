@@ -1,19 +1,18 @@
-[![GitHub Super-Linter](https://github.com/andyds1/Landing/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
-
 # Welcome! 👋
+[![GitHub Super-Linter](https://github.com/andyds1/Landing/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 Follow along during my progress on making a landing page for myself.
 Here I apply technologies and techniques I learn during my education [@howest](https://www.howest.be/en/programmes/bachelor/applied-computer-science).
 
 ---
 
-### Update 20/10/24
+## Update 20/10/24
 * Basic structure and styling of the page has been finished
-* Several new learned concepts were added in such as: 
+* Several new learned concepts were added in such as:
   * Flexbox
   * Semantic form + post
   
-### Update 08/10/25
+## Update 08/10/25
 Back after a year long hiatus
 
 * Made page responsive
