@@ -453,6 +453,11 @@ nav.main-nav li a {
     margin-bottom: 1.5rem;
 }
 
+.blog-post-content a {
+    border: none;
+    text-decoration: underline var(--secondary-color) .1rem solid;
+}
+
 .back-to-blog {
     display: inline-block;
     margin-bottom: 2rem;
