@@ -33,5 +33,5 @@ export function redirectTo (page) {
 
 // Update page title
 export function updatePageTitle (title) {
-  document.title = `${title} - Andy De Schuytener`
+  document.title = `${title} - ADSDev`
 }
