@@ -458,6 +458,12 @@ nav.main-nav li a {
     text-decoration: underline var(--secondary-color) .1rem solid;
 }
 
+.blog-post-content img {
+    width:100%;
+    max-width:800px;
+    margin:10px 0;
+}
+
 .back-to-blog {
     display: inline-block;
     margin-bottom: 2rem;
@@ -480,6 +486,12 @@ nav.main-nav li a {
 .contact-form textarea.error:focus {
     border-color: #c0392b;
     box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.contact-form #gotcha {
+    position: absolute; 
+    left: -9999px; 
+    opacity: 0;
 }
 
 .field-error {

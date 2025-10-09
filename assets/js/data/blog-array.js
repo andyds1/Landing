@@ -9,7 +9,7 @@ export const blogPosts = [
     content: `
       <p>Attended the Tech & Meet on 7 oktober @ Howest where I had the pleasure listening to two speakers from the CCB talk about modern threat intelligence. A demo was given on how big the impact of OSINT is to find and evaluate upcoming threats. Tools such as urlScan, Censys and JA4S fingerprinting were covered during this talk.</p>
 
-      <img src="../assets/images/blog/techmeet6okt.jpg" alt="Threat Intelligence" style="width:100%;max-width:600px;margin:20px 0;">
+      <img src="../assets/images/blog/techmeet6okt.jpg" alt="Threat Intelligence">
 
       <h3>urlScan.io in OSINT Investigations</h3>
       <p><a href="https://urlscan.io/" target="_blank" rel="noopener noreferrer">urlScan.io</a> is described by experts as a "searchable archive of internet behavior," vital for bug bounty, threat hunting, and digital forensics. It allows for deep reconnaissance: extracting domains, JavaScript files, APIs, and key behavioral data from suspicious websites, including redirect chains and CMS libraries. Analysts rely on urlScan to uncover threat actor infrastructure and map how malicious sites operate, making it a goldmine for cyber investigators.</p>
