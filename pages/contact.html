@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/screen.css">
 
-    <title>Andy De Schuytener</title>
+    <title>Andy De Schuytener - Contact</title>
 </head>
 
 <body>
@@ -28,17 +28,19 @@
                 <h1>Contact<span class="accent">.</span></h1>
                 <p>Want to work together? Get in touch!</p>
             </div>
-            <form action="https://getform.io/f/6af2f056-ce4e-4719-aebc-6acf0aea6fbf" method="POST">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Firstname Lastname" required>
+            
+            <form class="contact-form" novalidate>
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" name="name" id="name" placeholder="Firstname Lastname" maxlength="100" autocomplete="name" required>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" name="email" id="email" placeholder="example@domain.com" maxlength="100" autocomplete="email" required>
 
-                <label for="message">Message</label>
+                <label for="message">Message <span class="required">*</span></label>
                 <textarea name="message" id="message" placeholder="Message here" required></textarea>
 
-                <input type="hidden" name="_gotcha" style="display:none !important">
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; opacity: 0;">
+                
                 <input type="submit" value="Send">
             </form>
         </div>
