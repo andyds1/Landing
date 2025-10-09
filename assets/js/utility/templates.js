@@ -1,4 +1,4 @@
-import { initBurgerMenu } from './main.js'
+import { initBurgerMenu } from './nav.js'
 
 function createHeader (activePage) {
   return `
@@ -8,6 +8,11 @@ function createHeader (activePage) {
                     Applied CS</a></h3>
 
         <nav class="social-nav">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/andyds/" target="_blank" class="fa fa-linkedin"></a>
+                </li>
+            </ul>
             <ul>
                 <li>
                     <a href="https://github.com/andyds1" target="_blank" class="fa fa-github"></a>
@@ -36,7 +41,7 @@ function createHeader (activePage) {
                     <span>&#62;&#95; </span><a href="/pages/projects.html" ${activePage === 'projects' ? 'class="active"' : ''}>Projects</a>
                 </li>
                 <li>
-                    <span>&#62;&#95; </span><a href="/pages/about.html" ${activePage === 'about' ? 'class="active"' : ''}>About</a>
+                    <span>&#62;&#95; </span><a href="/pages/blog.html" ${activePage === 'blog' ? 'class="active"' : ''}>Blog</a>
                 </li>
                 <li>
                     <span>&#62;&#95; </span><a href="/pages/contact.html" ${activePage === 'contact' ? 'class="active"' : ''}>Contact</a>
@@ -57,7 +62,7 @@ function initHeader (activePage) {
 
 function createFooter () {
   return `
-        <p>&copy; ${new Date().getFullYear()} Andy De Schuytener. All rights reserved.</p>
+        <p>&copy; ${new Date().getFullYear()} <a href="https://adsdev.xyz" target="_blank"><span class="accent">ADS</span></a>Dev<span class="accent">.</span> All rights reserved.</p>
     `
 }
 
