@@ -36,6 +36,9 @@ function createHeader (activePage) {
                     <span>&#62;&#95; </span><a href="/pages/projects.html" ${activePage === 'projects' ? 'class="active"' : ''}>Projects</a>
                 </li>
                 <li>
+                    <span>&#62;&#95; </span><a href="/pages/blog.html" ${activePage === 'blog' ? 'class="active"' : ''}>Blog</a>
+                </li>
+                <li>
                     <span>&#62;&#95; </span><a href="/pages/about.html" ${activePage === 'about' ? 'class="active"' : ''}>About</a>
                 </li>
                 <li>
