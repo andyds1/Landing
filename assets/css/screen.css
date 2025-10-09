@@ -714,23 +714,22 @@ footer a:hover span.accent {
     }
 }
 
-/* Small mobile */
 @media screen and (width <= 480px) {
     body {
         width: 95%;
-        font-size: 0.9rem;
+        font-size: 0.95rem; 
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem; 
     }
 
     h2, h3 {
-        font-size: 1.1rem;
+        font-size: 1.2rem; 
     }
 
     .fa {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     main {
@@ -738,7 +737,7 @@ footer a:hover span.accent {
     }
 
     nav.main-nav li {
-        margin-top: 1rem;
+        margin-top: 0.75rem;
     }
 
     .project-card {

@@ -56,7 +56,6 @@ function initHeader (activePage) {
   const header = document.querySelector('main header')
   if (header) {
     header.innerHTML = createHeader(activePage)
-    initBurgerMenu()
   }
 }
 
