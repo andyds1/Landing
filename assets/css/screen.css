@@ -178,6 +178,12 @@ nav.main-nav li a {
     font-weight: 700;
 }
 
+.section-header {
+    margin-bottom: 3rem;
+    border-bottom: var(--detail-color) .1rem solid;
+    padding-bottom: 2rem;
+}
+
 /* PROJECTS PAGE */
 
 .projects-grid {
@@ -328,12 +334,6 @@ nav.main-nav li a {
 
 .burger-menu.active span:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.blog-header {
-    margin-bottom: 3rem;
-    border-bottom: var(--detail-color) .1rem solid;
-    padding-bottom: 2rem;
 }
 
 .blog-filters {
