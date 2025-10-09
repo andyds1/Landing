@@ -1,5 +1,5 @@
-import { blogPosts } from '../data/blogArray.js'
-import { formatDate, getURLParameter, redirectTo, updatePageTitle } from './utility/utils.js'
+import { blogPosts } from '../data/blog-array.js'
+import { formatDate, getURLParameter, redirectTo, updatePageTitle } from '../utility/utils.js'
 
 // Load blog page with all posts
 export function loadBlog () {

@@ -1,5 +1,5 @@
 import { projects } from '../data/project-array.js'
-import { getURLParameter, redirectTo, updatePageTitle } from './utility/utils.js'
+import { getURLParameter, redirectTo, updatePageTitle } from '../utility/utils.js'
 
 // Load projects on the projects page
 export function loadProjects () {

@@ -1,4 +1,4 @@
-import { initBurgerMenu } from './main.js'
+import { initBurgerMenu } from './nav.js'
 
 function createHeader (activePage) {
   return `
