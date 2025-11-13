@@ -88,6 +88,9 @@ function renderBlogPosts (posts) {
     return
   }
 
+  // Sort posts by date (newest first)
+  posts.sort((a, b) => new Date(b.date) - new Date(a.date))
+
   let postsHTML = ''
   posts.forEach(post => {
     const tagsHTML = post.tags.map(tag => `<span class="blog-tag">${tag}</span>`).join('')
