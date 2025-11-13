@@ -30,7 +30,8 @@ h2 {
 }
 
 h3 {
-    margin-top: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 2rem;
     font-size: 1.25rem;
     font-family: var(--heading-font);
 }
@@ -69,6 +70,10 @@ a.active {
 
 span.accent {
     color: var(--secondary-color);
+}
+
+span.italic {
+    font-style: italic;
 }
 
 label {
@@ -257,7 +262,7 @@ nav.main-nav li a {
     margin-bottom: 2rem;
 }
 
-.project-detail-header h2 {
+.project-detail-header h1 {
     margin-bottom: 1rem;
 }
 

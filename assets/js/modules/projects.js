@@ -57,8 +57,8 @@ export function loadProjectDetail () {
   updatePageTitle(project.title)
 
   // Update project details
-  document.querySelector('.project-detail-header h2').innerHTML =
-    `<span class="accent">### </span>${project.title}`
+  document.querySelector('.project-detail-header h1').innerHTML =
+    `${project.title}`
 
   // Update tags
   const tagsContainer = document.querySelector('.project-detail-header .project-tags')
@@ -82,12 +82,21 @@ export function loadProjectDetail () {
   const techSection = projectSections[2].querySelector('p')
   techSection.textContent = project.technologies
 
-  // Update links
+  // Update links if they exist
   const demoLink = document.querySelector('.project-button:not(.secondary)')
   const githubLink = document.querySelector('.project-button.secondary')
 
-  demoLink.href = project.demoLink
-  githubLink.href = project.githubLink
+  if (project.demoLink) {
+    demoLink.href = project.demoLink
+  } else {
+    demoLink.style.display = 'none'
+  }
+
+  if (project.githubLink) {
+    githubLink.href = project.githubLink
+  } else {
+    githubLink.style.display = 'none'
+  }
 
   // Update image if exists
   if (project.image) {
