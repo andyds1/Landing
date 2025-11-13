@@ -27,7 +27,7 @@ const projects = [
   tags: ['JavaScript', 'TypeScript', 'HTML/CSS', 'MongoDB', 'AI/ML', 'Swagger'],
   image: '', // Add your image path
   demoLink: 'https://vimeo.com/1136302649?share=copy&fl=sv&fe=ci',
-  githubLink: '',
+  githubLink: 'https://github.com/andyds1/fishdex_frontend_htf2025',
   features: [
     'AI-powered fish identification with confidence scoring',
     'Personal Pokedex-style collection gallery',
